@@ -1,5 +1,7 @@
 # Astro Starter Kit: Basics
 
+## Astro + PrimeVue minimal working setup
+
 ```sh
 npm create astro@latest -- --template basics
 ```
