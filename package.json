@@ -12,7 +12,9 @@
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@astrojs/vue": "^4.0.8",
+    "@nanostores/vue": "^0.10.0",
     "astro": "^4.1.2",
+    "nanostores": "^0.9.5",
     "primeicons": "^6.0.1",
     "primevue": "^3.46.0",
     "typescript": "^5.3.3",

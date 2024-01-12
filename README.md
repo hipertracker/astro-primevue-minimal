@@ -1,6 +1,9 @@
-# Astro Starter Kit: Basics
 
-## Astro + PrimeVue minimal working setup
+# Astro + PrimeVue minimal working example
+
+This is a minimal working example for Astro + PrimeVue + nanostores.
+
+## Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics

@@ -1,10 +1,13 @@
 ---
-import AccordionDemo from '../components/AccordionDemo.vue';
 import Layout from '../layouts/Layout.astro';
+import AccordionDemo from '../components/AccordionDemo.vue';
+import ThemeSwitcher from '../components/ThemeSwitcher.vue';
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
+    <ThemeSwitcher  client:load/>
+    <hr/>
     <AccordionDemo client:load />
   </main>
 </Layout>
