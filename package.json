@@ -11,13 +11,20 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
+    "@astrojs/sitemap": "^3.0.4",
     "@astrojs/vue": "^4.0.8",
     "@nanostores/vue": "^0.10.0",
+    "@sentry/astro": "^7.93.0",
+    "@spotlightjs/astro": "^1.0.9",
     "astro": "^4.1.2",
     "nanostores": "^0.9.5",
     "primeicons": "^6.0.1",
     "primevue": "^3.46.0",
     "typescript": "^5.3.3",
     "vue": "^3.4.10"
+  },
+  "devDependencies": {
+    "@nanostores/logger": "^0.2.4",
+    "@vue/devtools-api": "^6.5.1"
   }
 }
