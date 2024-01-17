@@ -1,12 +1,11 @@
-import PrimeVue from 'primevue/config';
-import type {App} from 'vue';
-import 'primeicons/primeicons.css'
+import 'primeicons/primeicons.css';
 
+import PrimeVue from 'primevue/config';
+import type { App } from 'vue';
 // WARNING: use older @nanostores/vue/devtools == 6.5.1
 // because the new one will not work at the time of
 // this writing (2024-01-12)
-import {devtools} from '@nanostores/vue/devtools'
-
+import { devtools } from '@nanostores/vue/devtools';
 import { mainStore } from '../stores/main_store';
 
 export default (app: App) => {

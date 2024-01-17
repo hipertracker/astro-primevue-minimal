@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.4.1",
     "@astrojs/sitemap": "^3.0.4",
     "@astrojs/vue": "^4.0.8",
+    "@nanostores/persistent": "^0.9.1",
     "@nanostores/vue": "^0.10.0",
     "@sentry/astro": "^7.93.0",
     "@spotlightjs/astro": "^1.0.9",

@@ -1,28 +1,30 @@
 <script lang="ts" setup>
-import {useStore} from '@nanostores/vue'
-import {mainStore, toggleDarkMode} from '../stores/main_store.ts'
-import {usePrimeVue} from "primevue/config";
-import {computed} from "vue";
-import {PrimeIcons} from 'primevue/api';
+import { useStore } from "@nanostores/vue";
+import { usePrimeVue } from "primevue/config";
+import { onMounted } from "vue";
+import {
+  mainStore,
+  setDarkMode,
+  setLightMode,
+  toggleDarkMode,
+} from "../stores/main_store.ts";
 
 const PrimeVue = usePrimeVue();
-const $store = useStore(mainStore)
-
-const iconClass = computed(() => {
-  return $store.value.darkMode ? PrimeIcons.MOON : PrimeIcons.SUN;
-})
+const store = useStore(mainStore);
 
 function clicked() {
-  const darkMode = $store.value.darkMode;
-  const currentTheme = darkMode ? 'lara-dark-blue' : 'lara-light-blue';
-  const newTheme = !darkMode ? 'lara-dark-blue' : 'lara-light-blue';
-  PrimeVue.changeTheme(currentTheme, newTheme, 'theme-link', () => {
-    console.log('theme changed!');
-    toggleDarkMode()
-  });
+  toggleDarkMode(PrimeVue);
 }
+
+onMounted(() => {
+  if (store.value.dark === "yes") {
+    setDarkMode(PrimeVue);
+  } else {
+    setLightMode(PrimeVue);
+  }
+});
 </script>
 
 <template>
-  <i :class="iconClass" aria-label="dark mode" @click="clicked"/>
+  <i :class="store.icon + ' cursor-pointer'" aria-label="dark mode" @click="clicked" />
 </template>
