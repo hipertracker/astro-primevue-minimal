@@ -1,7 +1,12 @@
 
 # Astro + PrimeVue minimal working example
 
-This is a minimal working example for Astro + PrimeVue + nanostores.
+This is a minimal working example for [Astro](https://astro.build/) + [PrimeVue](https://primevue.org/) + [nanostores](https://docs.astro.build/en/core-concepts/sharing-state/#why-nano-stores).
+
+## Changes
+
+`2024-01-17` Introduced **persistent** nanostores and altered the Vue component initiation by switching to the `client:only` directive. Previously, the `client:load` directive was employed, which executed the Vue component on the server. This approach posed complications for the dark theme component functionality, as the server-side lacks access to local storage."
+
 
 ## Astro Starter Kit: Basics
 
